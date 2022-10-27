@@ -2,6 +2,8 @@ PWA exercise source: https://medium.com/beginners-guide-to-mobile-web-developmen
 
 
 Steps:
+* Run following command on terminal:
+pip3.10 install git+https://github.com/silviolleite/django-pwa
 * Create serviceworker.js in static/js folder
 * Add the following line to the settings 
 PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'posts/static/js', 'serviceworker.js')
@@ -10,3 +12,6 @@ PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'posts/static/js', 'servicework
 {% load pwa %}
 * And following one to inside of head
 {% progressive_web_app_meta %}
+
+
+! Meta tags will register service worker for you defining the scope of service worker as / So service worker can have access to every page in your website.
