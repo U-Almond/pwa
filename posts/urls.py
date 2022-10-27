@@ -1,14 +1,7 @@
-from django.conf import settings
 from django.urls import path
-from django.conf.urls.static import static
 from . import views
-
-
 urlpatterns = [
-    # URLs that require a session 
-    path('', views.index),
-
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-
-
+    path(r'', views.index,name='index'),
+    path(r'base_layout',views.base_layout,name='base_layout'),
+    # path(r'getdata',views.getdata,name='getdata')
+]
