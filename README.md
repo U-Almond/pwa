@@ -17,3 +17,5 @@ PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'posts/static/js', 'servicework
 
 Notes:
 ! Meta tags will register service worker for you defining the scope of service worker as / So service worker can have access to every page in your website.
+
+! Remember, idb.js file is used for IndexedDB Promised API. We are not going to change anything in idb.js file. All IndexedDB operations will be carried out by idbop.js file.
