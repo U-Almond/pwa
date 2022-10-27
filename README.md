@@ -6,3 +6,7 @@ Steps:
 * Add the following line to the settings 
 PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'posts/static/js', 'serviceworker.js')
 
+* Add following lines to index.js
+{% load pwa %}
+* And following one to inside of head
+{% progressive_web_app_meta %}
